@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>BorsukSoftware</Authors>
+		<Copyright>BorsukSoftware</Copyright>
+		<PackageTags>borsuksoftware;aws;devicefarm;awsdevicefarm</PackageTags>
+		<PackAsTool>True</PackAsTool>
+		<PackageIcon>logo.png</PackageIcon>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AWSSDK.DeviceFarm" Version="3.7.2.8" />
+		<PackageReference Include="AWSSDK.SecurityToken" Version="3.7.1.211" />
+	</ItemGroup>
+
+</Project>
