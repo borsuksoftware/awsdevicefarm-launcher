@@ -164,6 +164,8 @@ Others:
                                 Console.WriteLine($"Unable to parse '{str}' as a valid job time out");
                                 return 1;
                             }
+
+                            executionConfigJobTimeoutMinutes = v;
                             break;
                         }
 
